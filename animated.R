@@ -6,6 +6,7 @@ library(scales)
 library(readxl)
 library(extrafont)
 library(hrbrthemes)
+library(animation)
 
 
 
