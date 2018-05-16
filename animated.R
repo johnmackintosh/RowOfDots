@@ -35,16 +35,16 @@ lims <- as.POSIXct(strptime(c("2014-09-03 00:00","2014-09-03 24:00")
 
 
 animation::ani.options(interval = .2,ani.width = 900, ani.height = 550, ani.res = 300)
-
+# interval controls the speed, lower is faster
 
 
 p <- ggplot(plot_data,aes(Movement15,Movement_15_SEQNO, colour=Movement_Type, frame = Movement15,cumulative = TRUE))+
   geom_jitter(width=0.10)+
-  scale_colour_manual(values=c("#D7100D","#40B578","grey60"))+
-  facet_grid(Staging_Post~.,switch = "both")+
-  scale_x_datetime(date_labels="%H:%M",date_breaks = "3 hours",
+  scale_colour_manual(values = c("#D7100D","#40B578","grey60"))+
+  facet_grid(Staging_Post ~.,switch = "both")+
+  scale_x_datetime(date_labels ="%H:%M",date_breaks = "3 hours",
                    limits = lims,
-                   timezone = Sys.timezone(),
+                   timezone = "UTC",
                    expand = c(0,0))+
   labs(x = NULL, 
        y=NULL,
