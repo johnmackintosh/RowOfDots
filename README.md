@@ -1,5 +1,6 @@
 # RowOfDots
-R code to recreate @kurtstat's "RedGreenGreyDots" patient flow dotplot
+R code to recreate Neil Pettinger (@kurtstat)'s "RedGreenGreyDots" patient flow dotplot
+Spreadsheet uploaded with permission of Neil Pettinger
 
 
 ![2017-12-19-row-of-dots-output](https://user-images.githubusercontent.com/3278367/34303218-57ba184c-e72c-11e7-9219-a823ff47bf5f.gif)
